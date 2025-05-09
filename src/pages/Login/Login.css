@@ -1,0 +1,181 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* Fundo geral */
+body {
+  background-color: #e8e3e393;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Container da página de login */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Formulário de login */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffffc2;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.349);
+  width: 100%;
+  max-width: 250px;
+  max-height: 390px;
+  text-align: center;
+}
+
+/* Título Login */
+.login-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem;
+  color: #000000cf;
+  margin-bottom: 3rem;
+}
+
+/* Campos de input */
+.login-form input {
+  width: 80%;
+  padding: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin: 0.5rem 0;
+  margin-bottom: 1.8rem;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+
+/* Botão de login */
+.login-form button {
+  width: 80%;
+  font-size: 13pt;
+  font-weight: 550;
+  padding: 0.5rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover no botão */
+.login-form button:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
+
+/* Mensagem de cadastro */
+.register-message {
+  margin-top: 1.8rem;
+  font-size: 1rem;
+  font-family: 'Arial', sans-serif;
+  color: #666666;
+}
+
+/* Link de cadastro */
+.register-message a {
+  color: #4caf50;
+  text-decoration: none;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Texto "Clique aqui" */
+.register-link {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #4caf50;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 0.4rem;
+  transition: transform 0.2s ease-in-out, font-weight 0.2s;
+}
+
+/* Hover no "Clique aqui" */
+.register-link:hover {
+  transform: scale(1.07);
+  font-weight: bold;
+}
+
+/* Texto anterior ao link */
+.register-label {
+  font-family: 'Arial', sans-serif;
+  color: #444444;
+}
+.recover-link {
+font-family: 'Arial', sans-serif;
+font-weight: bold;
+color: #4caf50;
+text-decoration: none;
+display: inline-block;
+margin-left: 0.4rem;
+position: relative;
+top: -15px;
+transition: transform 0.2s ease-in-out, font-weight 0.2s;
+}
+.recover-link:hover {
+transform: scale(1.07);
+font-weight: bold;
+}
+.login-button {
+  position: relative;
+  text-align: center;
+}
+
+.button-content {
+  display: inline-block;
+  position: relative;
+}
+
+.loader-icon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  stroke-width: 3px;
+  animation: spin 1.5s linear infinite;
+  left: -24px; /* Ajuste este valor para controlar a distância entre o ícone e o texto */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@keyframes spin {
+  from {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+
+.senha-container {
+  position: relative;
+}
+
+.senha-container input {
+  padding-right: 23px; /* espaço pro ícone */
+}
+
+.olho-senha {
+  position: absolute;
+  right: 7px;
+  top: 32px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #777; /* tom discreto */
+}
