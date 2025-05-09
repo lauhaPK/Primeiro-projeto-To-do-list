@@ -1,0 +1,5 @@
+Olá este é meu primeiro projeto (em adanamento) baseado em uma lista de tarefas.
+
+É uma lista de tarefas com alguns incrementos, tela de login com autenticação, cadastro e recuperação de senha (essas funcionalidades serão devidamente implementadas quando eu chegar na parte do backend).
+Basicamente é uma lista de tarefas onde o usuário pode adicionar e excluir categorias, adicionar tarefas especificas a cada categoria, além de poder gerenciar as mesmas.
+As tecnologias usadas ate o momento foram react e typescript para fazer o frontend, como o projeto está em desenvolvimento ainda, para o backend tenho em mente usar NodeJS e Express, e para o banco de dados PostgreSQL.
